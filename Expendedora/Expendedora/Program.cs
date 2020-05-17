@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Solucion.LibreriaConsola;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Solucion.LibreriaNegocio;
 
 namespace Solucion.Consola
 {
@@ -16,7 +18,7 @@ namespace Solucion.Consola
             string menu = "0) Encender Maquina \n1) Latas Disponibles \n2) Ingresar Lata " +
                 "\n3) Extraer Lata \n4) Obtener Balance \n5) Mostrar Stock \nX) Salir";
             
-            Expendedora exp = new Expendedora("Expendedora 1");
+            Expendedora exp = new Expendedora("Expetech",40,0,false);
 
             do
             {
@@ -85,8 +87,40 @@ namespace Solucion.Consola
             Console.ReadKey();
         }
 
+
+        #region 
+
+        private static void EncenderMaquina(Expendedora exp)
+        {
+            exp.encenderMaquina();
+            Console.WriteLine("La maquina ha sido encendida");
+
+        }
+        
+        private static void ListarLatas(Expendedora exp)
+        {
+        }
+
+        private static void IngresarLata(Expendedora exp)
+        {
+        }
+
+        private static void ExtraerLata(Expendedora exp)
+        {
+        }
+
+        private static void ObtenerBalance(Expendedora exp)
+        {
+        }
+
+        private static void MostrarStock(Expendedora exp)
+        {
+        }
+
+
+
+
         /*
-        #region "Métodos Propios de este programa, no reutilizables ya que piden ingresos solo para interfaz consola"
         private static void EliminarEmpleado(Facultad fce)
         {
             try
@@ -291,8 +325,10 @@ namespace Solucion.Consola
             Console.WriteLine(persona.GetCredencial());
         }
 
+            */
+
         #endregion
 
-        */
+
     }
 }

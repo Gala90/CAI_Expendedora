@@ -48,5 +48,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Solucion.LibreriaConsola\Solucion.LibreriaConsola.csproj">
+      <Project>{b9b63182-6914-4a0f-bed0-7415647c847e}</Project>
+      <Name>Solucion.LibreriaConsola</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Solucion.LibreriaNegocio\Solucion.LibreriaNegocio.csproj">
+      <Project>{B2DE1541-E511-4955-A911-366D85DB9EE9}</Project>
+      <Name>Solucion.LibreriaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
