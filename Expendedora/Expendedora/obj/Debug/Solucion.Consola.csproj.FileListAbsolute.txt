@@ -1,0 +1,16 @@
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Expendedora\obj\Debug\Solucion.Consola.csprojAssemblyReference.cache
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Expendedora\obj\Debug\Solucion.Consola.csproj.CoreCompileInputs.cache
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Expendedora\bin\Debug\Expendedora.exe.config
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Expendedora\bin\Debug\Expendedora.exe
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Expendedora\bin\Debug\Expendedora.pdb
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Expendedora\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Expendedora\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Expendedora\bin\Debug\Solucion.LibreriaConsola.dll
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Expendedora\bin\Debug\Solucion.LibreriaNegocio.dll
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Expendedora\bin\Debug\Solucion.LibreriaConsola.pdb
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Expendedora\bin\Debug\Solucion.LibreriaNegocio.pdb
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Expendedora\bin\Debug\Solucion.LibreriaNegocio.dll.config
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Expendedora\bin\Debug\Microsoft.ReportViewer.WinForms.xml
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Expendedora\obj\Debug\Solucion.Consola.csproj.CopyComplete
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Expendedora\obj\Debug\Expendedora.exe
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Expendedora\obj\Debug\Expendedora.pdb

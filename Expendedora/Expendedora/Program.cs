@@ -1,10 +1,13 @@
-﻿using Solucion.LibreriaConsola;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Solucion.LibreriaConsola;
 using Solucion.LibreriaNegocio;
+
+
 
 namespace Solucion.Consola
 {
@@ -99,6 +102,8 @@ namespace Solucion.Consola
         
         private static void ListarLatas(Expendedora exp)
         {
+            Console.WriteLine("CO1 - Coca Cola Regular \nCO2 - Coca Cola Zero     \nSP1 - Sprite Regular" +
+                                "\nSP2 - Sprite Zero  \nFA1 - Fanta Regular    \nFA2 - Fanta Zero");
         }
 
         private static void IngresarLata(Expendedora exp)
