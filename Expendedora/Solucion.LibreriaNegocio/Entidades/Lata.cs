@@ -33,8 +33,7 @@ namespace Solucion.LibreriaNegocio
 
         public double GetPrecioPorLitro()
         {
-            return Precio;
-            //Completar
+            return Precio / Volumen;
         }
 
         public override string ToString()

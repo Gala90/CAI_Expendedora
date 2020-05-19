@@ -35,17 +35,25 @@ namespace Solucion.LibreriaNegocio
             this._encendida = encendida;
         }
 
-        /*
         public void agregarLata(Lata l)
         {
-
-        } 
-
-        public Lata extraerLata(string s, double d)
-        {
-
+            //Validaciones para agregar Lata aca
+            this.Latas.Add(l);
         }
 
+        
+
+        public Lata extraerLata(string cod, double dinero)
+        {
+            foreach (Lata l in Latas)
+            {
+                if ((l.Codigo == cod) && (l.Precio == dinero))
+                   return l;
+        
+            }
+        }
+
+        /*
         public string getBalance()
         {
 
