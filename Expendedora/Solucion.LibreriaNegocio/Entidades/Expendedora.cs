@@ -66,22 +66,25 @@ namespace Solucion.LibreriaNegocio
             return balance;
         }
 
-        /*
+
         public int getCapacidadRestante()
         {
+            int capRestante = _capacidad - Latas.Count();       
+            return capRestante;
 
         }
-        */
+
         public void encenderMaquina ()
         {
             _encendida = true; 
         }
-        /*
+
+
         public bool estaVacia()
         {
-
+            return Latas.Count() == 0;
         }
 
-    */
+
     }
 }

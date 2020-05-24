@@ -116,6 +116,7 @@ namespace Solucion.Consola
 
         private static void ObtenerBalance(Expendedora exp)
         {
+            exp.getBalance();
         }
 
         private static void MostrarStock(Expendedora exp)
