@@ -42,23 +42,31 @@ namespace Solucion.LibreriaNegocio
         }
 
         
-
+        /*
         public Lata extraerLata(string cod, double dinero)
         {
             foreach (Lata l in Latas)
             {
                 if ((l.Codigo == cod) && (l.Precio == dinero))
-                   return l;
-        
+                    Dinero = Dinero + dinero;
+                    Latas.Remove(l);
+                    return l;
+                    
+
+                // Que pasa si no la encuentra o el dinero no es suficiente?
+
+
             }
+        }
+        */
+
+        public string getBalance()
+        {
+            string balance = "Cantidad de latas: " + Latas.Count() + " Cantidad de dinero: " + Dinero;       
+            return balance;
         }
 
         /*
-        public string getBalance()
-        {
-
-        }
-
         public int getCapacidadRestante()
         {
 
