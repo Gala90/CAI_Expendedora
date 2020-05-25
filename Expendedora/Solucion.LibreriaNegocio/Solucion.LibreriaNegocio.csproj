@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\Exceptions.cs" />
     <Compile Include="Entidades\Expendedora.cs" />
     <Compile Include="Entidades\Lata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
