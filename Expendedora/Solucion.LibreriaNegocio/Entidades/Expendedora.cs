@@ -41,6 +41,7 @@ namespace Solucion.LibreriaNegocio
             if (Latas.Count() < _capacidad)
             {
                 this.Latas.Add(l);
+
             } else
             {
                 throw new CapacidadInsuficienteException();
@@ -48,9 +49,11 @@ namespace Solucion.LibreriaNegocio
         }
 
         
-/*
+
         public Lata extraerLata(string cod, double dinero)
         {
+            Lata l1 = null;
+
             foreach (Lata l in Latas)
             {
                 if (l.Codigo == cod)
@@ -59,7 +62,8 @@ namespace Solucion.LibreriaNegocio
                     {
                         Dinero = Dinero + dinero;
                         Latas.Remove(l);
-                        return l;
+                        l1 = l;
+
                     }
 
                     if (l.Precio > dinero)
@@ -78,9 +82,10 @@ namespace Solucion.LibreriaNegocio
                 }
                 
             }
+            return l1;
         }
 
-*/
+
         public string getBalance()
         {
             string balance = "Cantidad de latas: " + Latas.Count() + " Cantidad de dinero: " + Dinero;       
@@ -107,6 +112,11 @@ namespace Solucion.LibreriaNegocio
             return Latas.Count() == 0;
         }
 
+        public List<String> CodigosValidos()
+        {
+            List<String> codigosValidos = new List<String> { "CO1", "CO2", "SP1", "SP2", "FA1", "FA2" };
+            return codigosValidos;
+        }
 
     }
 }

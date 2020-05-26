@@ -8,7 +8,6 @@ using Solucion.LibreriaConsola;
 using Solucion.LibreriaNegocio;
 
 
-
 namespace Solucion.Consola
 {
     class Program
@@ -110,6 +109,76 @@ namespace Solucion.Consola
 
         private static void IngresarLata(Expendedora exp)
         {
+            try
+            {
+                if (exp.Encendida == true)
+                {
+                    Console.WriteLine("Codigos validos: ");
+
+                    foreach (String cod in exp.CodigosValidos())
+                    {
+                        Console.WriteLine(cod);
+                    }
+
+
+                    string c = ConsolaHelper.PedirString("Codigo");
+                    if (ConsolaHelper.EsCodigoValido(c))
+                    {
+
+
+
+                        double p = ConsolaHelper.PedirDouble("Precio");
+                        double v = ConsolaHelper.PedirDouble("Volumen");
+
+                        string n = null;
+
+                        if (c.ToUpper() == "CO1" || c.ToUpper() == "CO2")
+                        {
+                            n = "Coca Cola";
+                        }
+                        if (c.ToUpper() == "SP1" || c.ToUpper() == "SP2")
+                        {
+                            n = "Sprite";
+                        }
+                        if (c.ToUpper() == "FA1" || c.ToUpper() == "FA2")
+                        {
+                            n = "Fanta";
+                        }
+
+                        string r = null;
+
+                        if (c.ToUpper() == "CO1" || c.ToUpper() == "SP1" || c.ToUpper() == "FA1")
+                        {
+                            r = "Regular";
+                        }
+                        if (c.ToUpper() == "CO2" || c.ToUpper() == "SP2" || c.ToUpper() == "FA2")
+                        {
+                            r = "Sprite";
+                        }
+
+
+                        Lata l = new Lata(c, n, r, p, v);
+                        exp.agregarLata(l);
+                        Console.WriteLine("Lata agregada.");
+
+                    } else
+                    {
+                        Console.WriteLine("Codigo invalido. Intente nuevamente. \n\n");
+                    }
+
+
+
+                }
+                else
+                {
+                    Console.WriteLine("Encienda la maquina");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error en uno de los datos ingresados. " + ex.Message + " Intente nuevamente. \n\n");
+            }
         }
 
         private static void ExtraerLata(Expendedora exp)
@@ -135,7 +204,12 @@ namespace Solucion.Consola
             {
                 if (exp.estaVacia() == false)
                 {
-                    Console.WriteLine("Aca va el stock"); //Devuelve Stock
+                    foreach (Lata l in exp.Latas)
+                    {
+                        Console.WriteLine(l.Descripcion());
+
+                    }
+
                 } else
                 {
                     Console.WriteLine("Maquina vacia");
@@ -148,8 +222,8 @@ namespace Solucion.Consola
             }
         }
 
-
        
+
         #endregion
 
 

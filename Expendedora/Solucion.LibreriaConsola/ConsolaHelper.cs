@@ -12,21 +12,7 @@ namespace Solucion.LibreriaConsola
         {
             Console.WriteLine("Ingrese " + msg);
             string n = Console.ReadLine();
-
-
-            foreach (char c in n)
-            {
-                if (char.IsDigit(c))
-                {
-                    throw new Exception("Caracter invalido en" + msg);
-                }
-            }
-
             return n;
-
-
-
-
 
             //validar algo
 
@@ -83,13 +69,54 @@ namespace Solucion.LibreriaConsola
         public static double PedirDouble(string msg)
         {
             Console.WriteLine("Ingrese " + msg);
+            double c = double.Parse(Console.ReadLine());
+
+
 
             // se puede validar algo o usar tryparse  o dejar que lo haga el framework
-            double c = double.Parse(Console.ReadLine());
+
 
 
             return c;
         }
 
-    }
+        public static bool EsCodigoValido(string input)
+        {
+
+                List<String> codigosValidos = new List<String> { "CO1", "CO2", "SP1", "SP2", "FA1", "FA2" };
+
+                if (string.IsNullOrEmpty(input)  // es nulo o vacío   
+                    || !codigosValidos.Contains(input.ToUpper()))  // no está dentro de las opciones válidas
+                {
+                    return false;
+                }
+                else
+                { 
+
+                return true;
+
+                }
+
+
+
+        }
+            /* 
+             Console.WriteLine("Ingrese " + msg);
+             string n = Console.ReadLine();
+             try
+             {
+                 List<String> codigosValidos = new List<String> { "CO1", "CO2", "SP1", "SP2", "FA1", "FA2" };
+                 codigosValidos.Contains(n);
+                 return n;
+             }
+             catch (Exception ex)
+             {
+                 Console.WriteLine("Error en uno de los datos ingresados. " + ex.Message + " Intente nuevamente. \n\n");
+             }
+
+             return n;
+         }
+         */
+
+        }
 }

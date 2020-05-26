@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Solucion.LibreriaNegocio.Entidades.Exceptions;
 
 namespace Solucion.LibreriaNegocio
 {
@@ -41,6 +42,20 @@ namespace Solucion.LibreriaNegocio
             return Nombre;
         }
 
+        public string Descripcion()
+        {
+            return Nombre + " - " + Sabor + " $ " + Precio + " / " + " $/L " + GetPrecioPorLitro();
+        }
+
 
     }
+
 }
+/*
+     + CO1 - Coca Cola Regular
+    + CO2 - Coca Cola Zero
+    + SP1 - Sprite Regular
+    + SP2 - Sprite Zero
+    + FA1 - Fanta Regular
+    + FA2 - Fanta Zero
+    */
