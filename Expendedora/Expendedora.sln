@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solucion.LibreriaConsola", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solucion.LibreriaNegocio", "Solucion.LibreriaNegocio\Solucion.LibreriaNegocio.csproj", "{B2DE1541-E511-4955-A911-366D85DB9EE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solucion.Formulario", "Solucion.Formulario\Solucion.Formulario.csproj", "{F663D3C2-2AB0-499B-A7B9-E50F304F208F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{B2DE1541-E511-4955-A911-366D85DB9EE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2DE1541-E511-4955-A911-366D85DB9EE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2DE1541-E511-4955-A911-366D85DB9EE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F663D3C2-2AB0-499B-A7B9-E50F304F208F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F663D3C2-2AB0-499B-A7B9-E50F304F208F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F663D3C2-2AB0-499B-A7B9-E50F304F208F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F663D3C2-2AB0-499B-A7B9-E50F304F208F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
