@@ -54,7 +54,7 @@ namespace Solucion.LibreriaNegocio
         {
             Lata l1 = null;
 
-            foreach (Lata l in Latas)
+            foreach (Lata l in Latas.ToList())
             {
                 if (l.Codigo == cod)
                 {
@@ -70,7 +70,7 @@ namespace Solucion.LibreriaNegocio
                     {
                         throw new DineroInsuficienteException();
                     }
-                    else
+                    if (l.Precio < dinero)
                     {
                         throw new ImporteMayorExcepcion();
                     }

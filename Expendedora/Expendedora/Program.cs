@@ -20,7 +20,7 @@ namespace Solucion.Consola
             string menu = "0) Encender Maquina \n1) Latas Disponibles \n2) Ingresar Lata " +
                 "\n3) Extraer Lata \n4) Obtener Balance \n5) Mostrar Stock \nX) Salir";
             
-            Expendedora exp = new Expendedora("Expetech",40,0,false);
+            Expendedora exp = new Expendedora("Expetech",2,0,false);
 
             do
             {
@@ -122,11 +122,9 @@ namespace Solucion.Consola
 
 
                     string c = ConsolaHelper.PedirString("Codigo");
+
                     if (ConsolaHelper.EsCodigoValido(c))
                     {
-
-
-
                         double p = ConsolaHelper.PedirDouble("Precio");
                         double v = ConsolaHelper.PedirDouble("Volumen");
 
@@ -157,7 +155,7 @@ namespace Solucion.Consola
                         }
 
 
-                        Lata l = new Lata(c, n, r, p, v);
+                        Lata l = new Lata(c.ToUpper(), n, r, p, v);
                         exp.agregarLata(l);
                         Console.WriteLine("Lata agregada.");
 
@@ -183,6 +181,47 @@ namespace Solucion.Consola
 
         private static void ExtraerLata(Expendedora exp)
         {
+            try
+            {
+                if (exp.Encendida == true)
+                {
+                    if (!exp.estaVacia())
+                    {
+                        Console.WriteLine("Codigos validos: ");
+
+                        foreach (String cod in exp.CodigosValidos().ToList())
+                        {
+                            Console.WriteLine(cod);
+                        }
+
+                        string c = ConsolaHelper.PedirString("Codigo");
+
+
+                        if (ConsolaHelper.EsCodigoValido(c))
+                        {
+                            double d = ConsolaHelper.PedirDouble("Dinero");
+                            exp.extraerLata(c.ToUpper(),d);
+                            Console.WriteLine("Retire la lata.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Codigo invalido. Intente nuevamente. \n\n");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("La maquina esta vacia");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Encienda la maquina");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error en uno de los datos ingresados. " + ex.Message + " Intente nuevamente. \n\n");
+            }
         }
 
         private static void ObtenerBalance(Expendedora exp)

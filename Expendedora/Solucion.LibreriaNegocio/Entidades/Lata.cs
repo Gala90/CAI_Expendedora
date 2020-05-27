@@ -44,18 +44,10 @@ namespace Solucion.LibreriaNegocio
 
         public string Descripcion()
         {
-            return Nombre + " - " + Sabor + " $ " + Precio + " / " + " $/L " + GetPrecioPorLitro();
+            return Codigo + " - " + Nombre + " - " + Sabor + " $ " + Precio + " / " + " $/L " + GetPrecioPorLitro();
         }
 
 
     }
 
 }
-/*
-     + CO1 - Coca Cola Regular
-    + CO2 - Coca Cola Zero
-    + SP1 - Sprite Regular
-    + SP2 - Sprite Zero
-    + FA1 - Fanta Regular
-    + FA2 - Fanta Zero
-    */
