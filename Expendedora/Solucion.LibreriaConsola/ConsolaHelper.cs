@@ -14,7 +14,7 @@ namespace Solucion.LibreriaConsola
             string n = Console.ReadLine();
             return n;
 
-            //validar algo
+           
 
 
         }

@@ -1,0 +1,14 @@
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Solucion.Formulario\bin\Debug\Solucion.Formulario.exe.config
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Solucion.Formulario\bin\Debug\Solucion.Formulario.exe
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Solucion.Formulario\bin\Debug\Solucion.Formulario.pdb
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Solucion.Formulario\obj\Debug\Solucion.Formulario.csprojAssemblyReference.cache
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Solucion.Formulario\obj\Debug\Solucion.Formulario.Properties.Resources.resources
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Solucion.Formulario\obj\Debug\Solucion.Formulario.csproj.GenerateResource.cache
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Solucion.Formulario\obj\Debug\Solucion.Formulario.csproj.CoreCompileInputs.cache
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Solucion.Formulario\obj\Debug\Solucion.Formulario.exe
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Solucion.Formulario\obj\Debug\Solucion.Formulario.pdb
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Solucion.Formulario\bin\Debug\Solucion.LibreriaNegocio.dll
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Solucion.Formulario\bin\Debug\Solucion.LibreriaNegocio.pdb
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Solucion.Formulario\bin\Debug\Solucion.LibreriaNegocio.dll.config
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Solucion.Formulario\obj\Debug\Solucion.Formulario.FrmMenu.resources
+C:\Users\Graciela\Documents\GitHub\CAI_Expendedora\Expendedora\Solucion.Formulario\obj\Debug\Solucion.Formulario.csproj.CopyComplete

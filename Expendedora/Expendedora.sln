@@ -14,6 +14,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solucion.LibreriaNegocio", "Solucion.LibreriaNegocio\Solucion.LibreriaNegocio.csproj", "{B2DE1541-E511-4955-A911-366D85DB9EE9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solucion.Formulario", "Solucion.Formulario\Solucion.Formulario.csproj", "{F663D3C2-2AB0-499B-A7B9-E50F304F208F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B2DE1541-E511-4955-A911-366D85DB9EE9} = {B2DE1541-E511-4955-A911-366D85DB9EE9}
+		{722E494C-9F38-46B1-90D4-6AAAC136400B} = {722E494C-9F38-46B1-90D4-6AAAC136400B}
+		{B9B63182-6914-4A0F-BED0-7415647C847E} = {B9B63182-6914-4A0F-BED0-7415647C847E}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
