@@ -45,17 +45,27 @@ namespace Solucion.Formulario
 
         private void Button4_Click(object sender, EventArgs e)
         {
-
+            FrmExtraer f = new FrmExtraer(this.exp);
+            f.Owner = this;
+            f.Show();
+            this.Hide();
         }
 
         private void Button5_Click(object sender, EventArgs e)
         {
+            FrmBalance f = new FrmBalance(this.exp);
+            f.Owner = this;
+            f.Show();
+            this.Hide();
 
         }
 
         private void Button6_Click(object sender, EventArgs e)
         {
-
+            FrmStock f = new FrmStock(this.exp);
+            f.Owner = this;
+            f.Show();
+            this.Hide();
         }
 
         private void Button7_Click(object sender, EventArgs e)

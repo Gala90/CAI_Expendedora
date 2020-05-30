@@ -11,15 +11,19 @@ using System.Windows.Forms;
 
 namespace Solucion.Formulario
 {
-    public partial class FrmIngresar : Form
+    public partial class FrmExtraer : Form
     {
         private Expendedora exp;
 
-        public FrmIngresar(Expendedora e)
+        public FrmExtraer(Expendedora e)
         {
             exp = e;
-
             InitializeComponent();
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -32,7 +36,12 @@ namespace Solucion.Formulario
 
         }
 
-        private void TextBox2_TextChanged(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
         {
 
         }
