@@ -54,15 +54,15 @@ namespace Solucion.LibreriaNegocio
         {
             Lata l1 = null;
 
-            foreach (Lata l in Latas.ToList())
+            foreach (Lata l in this.Latas)
             {
                 if (l.Codigo == cod)
                 {
                     if (l.Precio == dinero)
                     {
-                        Dinero = Dinero + dinero;
-                        Latas.Remove(l);
                         l1 = l;
+                        Dinero = Dinero + dinero;
+                        this.Latas.Remove(l);
                         break;
                     }
 
@@ -74,15 +74,18 @@ namespace Solucion.LibreriaNegocio
                     {
                         throw new ImporteMayorExcepcion();
                     }
-
-                }
-                else
-                {
-                    throw new SinStockException();
                 }
                 
             }
-            return l1;
+            if (l1 == null)
+            {
+                throw new SinStockException();
+            }
+            else
+            {
+                return l1;
+            }
+            
         }
 
 

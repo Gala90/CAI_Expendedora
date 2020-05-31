@@ -23,14 +23,15 @@ namespace Solucion.Formulario
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            listView1.Clear();
             if (exp.Encendida)
             {
                 if (!exp.estaVacia())
                 {
                     foreach (Lata l in exp.Latas)
                     {
-                        listView1.Items.Add(l.Descripcion());
 
+                        listView1.Items.Add(l.Descripcion());
                     }
                 } else
                 {
@@ -42,6 +43,8 @@ namespace Solucion.Formulario
             {
                 MessageBox.Show("Encienda la maquina.");
             }
+
+
         }
 
         private void Button2_Click(object sender, EventArgs e)

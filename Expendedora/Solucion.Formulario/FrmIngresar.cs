@@ -114,15 +114,24 @@ namespace Solucion.Formulario
 
                     exp.agregarLata(l);
                     MessageBox.Show("La lata de " + Marca() + " " + Sabor() + " ha sido agregada.");
+                    comboBox1.SelectedIndex = -1;
+                    textBox1.Clear();
+                    textBox2.Clear();
                 }
                 else
                 {
                     MessageBox.Show("Encienda la maquina");
+                    comboBox1.SelectedIndex = -1;
+                    textBox1.Clear();
+                    textBox2.Clear();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                comboBox1.SelectedIndex = -1;
+                textBox1.Clear();
+                textBox2.Clear();
             }
             
         }

@@ -103,12 +103,15 @@ namespace Solucion.Formulario
 
                         exp.extraerLata(comboBox1.Text, Convert.ToDouble(textBox1.Text));
                         MessageBox.Show("La lata de " + Marca() + " " + Sabor() + " ha sido extraida.");
-                        //Problema con ultimos elementos de la lista
+                        comboBox1.SelectedIndex = -1;
+                        textBox1.Clear();                       
 
                     }
                     else
                     {
                         MessageBox.Show("La maquina esta vacia");
+                        comboBox1.SelectedIndex = -1;
+                        textBox1.Clear();
                     }
 
 
@@ -116,6 +119,8 @@ namespace Solucion.Formulario
                 else
                 {
                     MessageBox.Show("Encienda la maquina");
+                    comboBox1.SelectedIndex = -1;
+                    textBox1.Clear();
                 }
 
 
@@ -124,6 +129,8 @@ namespace Solucion.Formulario
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                comboBox1.SelectedIndex = -1;
+                textBox1.Clear();
             }
         }
 
