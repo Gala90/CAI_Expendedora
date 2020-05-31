@@ -34,7 +34,7 @@ namespace Solucion.LibreriaNegocio
 
         public double GetPrecioPorLitro()
         {
-            return Precio / Volumen;
+            return (1000 * Precio) / Volumen;
         }
 
         public override string ToString()

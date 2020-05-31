@@ -63,7 +63,7 @@ namespace Solucion.LibreriaNegocio
                         Dinero = Dinero + dinero;
                         Latas.Remove(l);
                         l1 = l;
-
+                        break;
                     }
 
                     if (l.Precio > dinero)

@@ -104,15 +104,21 @@ namespace Solucion.Formulario
         { 
             try
             {
+                if (exp.Encendida)
+                {
 
-                Lata l = new Lata(comboBox1.Text, Marca(), Sabor(),
-                                        Convert.ToDouble(textBox1.Text),
-                                        Convert.ToDouble(textBox2.Text));
-                                        
+                    Lata l = new Lata(comboBox1.Text, Marca(), Sabor(),
+                                            Convert.ToDouble(textBox1.Text),
+                                            Convert.ToDouble(textBox2.Text));
 
-                exp.agregarLata(l);
-                MessageBox.Show("La lata de " + Marca() + " " + Sabor() +" ha sido agregada.");
 
+                    exp.agregarLata(l);
+                    MessageBox.Show("La lata de " + Marca() + " " + Sabor() + " ha sido agregada.");
+                }
+                else
+                {
+                    MessageBox.Show("Encienda la maquina");
+                }
             }
             catch (Exception ex)
             {

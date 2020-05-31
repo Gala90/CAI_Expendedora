@@ -20,7 +20,7 @@ namespace Solucion.Consola
             string menu = "0) Encender Maquina \n1) Latas Disponibles \n2) Ingresar Lata " +
                 "\n3) Extraer Lata \n4) Obtener Balance \n5) Mostrar Stock \nX) Salir";
             
-            Expendedora exp = new Expendedora("Expetech",2,0,false);
+            Expendedora exp = new Expendedora("Expetech",10,0,false);
 
             do
             {

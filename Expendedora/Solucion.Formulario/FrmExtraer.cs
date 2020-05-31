@@ -96,12 +96,27 @@ namespace Solucion.Formulario
         {
             try
             {
+                if (exp.Encendida) {
+
+                    if (!exp.estaVacia())
+                    {
 
                         exp.extraerLata(comboBox1.Text, Convert.ToDouble(textBox1.Text));
                         MessageBox.Show("La lata de " + Marca() + " " + Sabor() + " ha sido extraida.");
-                        //Arreglar esto
-                    
+                        //Problema con ultimos elementos de la lista
 
+                    }
+                    else
+                    {
+                        MessageBox.Show("La maquina esta vacia");
+                    }
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Encienda la maquina");
+                }
 
 
 

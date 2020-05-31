@@ -36,11 +36,15 @@
             // 
             // listView1
             // 
-            this.listView1.Location = new System.Drawing.Point(67, 59);
+            this.listView1.Alignment = System.Windows.Forms.ListViewAlignment.Default;
+            this.listView1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.listView1.Location = new System.Drawing.Point(58, 60);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(313, 189);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.List;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.ListView1_SelectedIndexChanged);
             // 
             // label1
             // 

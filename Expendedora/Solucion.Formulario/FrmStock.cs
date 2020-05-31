@@ -23,13 +23,36 @@ namespace Solucion.Formulario
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            if (exp.Encendida)
+            {
+                if (!exp.estaVacia())
+                {
+                    foreach (Lata l in exp.Latas)
+                    {
+                        listView1.Items.Add(l.Descripcion());
 
+                    }
+                } else
+                {
+                    MessageBox.Show("La maquina esta vacia");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Encienda la maquina.");
+            }
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
             this.Owner.Show();
             this.Dispose();
+        }
+
+        private void ListView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

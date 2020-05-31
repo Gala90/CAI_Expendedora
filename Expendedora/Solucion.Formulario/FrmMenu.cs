@@ -18,7 +18,7 @@ namespace Solucion.Formulario
 
         public FrmMenu()
         {
-            exp = new Expendedora("Exp3000", 6, 0, false);
+            exp = new Expendedora("Exp3000", 10, 0, false);
             InitializeComponent();
             
         }
